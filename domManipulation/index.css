@@ -1,0 +1,9 @@
+p{
+    padding: 10px;
+    background-color: pink;
+    border:1px solid #616161;
+}
+p:hover{
+    background-color: rgb(166, 240, 246);
+    cursor: pointer;
+}
