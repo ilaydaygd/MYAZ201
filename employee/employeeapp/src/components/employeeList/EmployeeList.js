@@ -1,7 +1,8 @@
 import React from 'react'
 import Employee from '../employee/Employee';
 
- function EmployeeList({employees, setList}) {
+
+ function EmployeeList({employees, setList, setSelectedEmployee}) {
 
     const handleClearAll = () => {
         setList([])
@@ -14,9 +15,13 @@ import Employee from '../employee/Employee';
     <div>
         <h3>Employee List {employees.length}</h3>
         {
-            employees.map((emp,index) => (
-            <Employee key={index} employee={emp} handleRemove={handleRemove}/>
-            ))
+        {employees.map((emp, index) => (
+            <Employee 
+            setSelectedEmployee={setSelectedEmployee}
+            key={index} 
+            employee={emp} 
+            handleRemove={handleRemove}/>
+            ))}
         }
         <button onClick={handleClearAll}>Clear All</button>
     </div>
