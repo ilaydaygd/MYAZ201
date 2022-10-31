@@ -16,7 +16,7 @@ import Employee from '../employee/Employee';
   return (
     <div>
         <h3>Employee List {employees.length}</h3>
-        {
+        
         {employees.map((emp, index) => (
             <Employee 
             setSelectedEmployee={setSelectedEmployee}
@@ -24,7 +24,7 @@ import Employee from '../employee/Employee';
             employee={emp} 
             handleRemove={handleRemove}/>
             ))}
-        }
+        
         <button onClick={handleClearAll}>Clear All</button>
     </div>
   );

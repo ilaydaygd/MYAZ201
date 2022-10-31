@@ -6,12 +6,12 @@ import AppContext from "./context/AppContext";
 
 function App() { 
 
-  const {appName, employees, setList, selectedEmployee, setSelectedEmployee} = useContext(AppContext)
+  const {appName} = useContext(AppContext)
 
 
   return (
-    <div>
-      <h1>{appName}</h1>
+    <div className="container m-auto">
+      <h1 className="text-center">{appName}</h1>
       <EmployeeList/>
       <EmployeeAdd />
       <EmployeeUpdate/>
