@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import EmployeeAdd from "./components/employeeAdd/EmployeeAdd";
 import EmployeeList from "./components/employeeList/EmployeeList";
 import EmployeeUpdate from "./components/employeeUpdate/EmployeeUpdate";

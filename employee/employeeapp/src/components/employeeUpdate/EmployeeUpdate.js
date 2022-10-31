@@ -1,6 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import AppContext from '../../context/AppContext'
-import { employees } from '../../data/data'
 
 export default function EmployeeUpdate() {
 
